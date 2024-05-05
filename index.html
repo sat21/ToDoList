@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="bumblebee">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+   
+    <link rel="icon" type="image/x-icon" href="to do.png">
+
+    <title>Todolist</title>
+</head>
+
+<body>
+
+
+    <div class="baslik">
+
+        <header>
+            <h1>Todo List</h1>
+
+            <div class="giris">
+                <input id="gorev-giris" type="text" placeholder="📋 Yapılacak İş Ekle" class="input w-full max-w-xs" />
+                <div id="ekle">
+
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="gorev-filtre">
+            <div class="menu-filtre">
+                <button class="button-filtre">Filtre</button>
+                <div class="menu-icerik">
+                    <a href="#" id="hepsi">Hepsi</a>
+                    <a href="#" id="devam">Devam Eden</a>
+                    <a href="#" id="biten">Biten</a>
+                </div>
+            </div>
+
+            <button id="biteni-sil" class="btn btn-ghost delete-selected-btn">
+                bitenleri sil
+            </button>
+
+            <button id="hepsini-sil" class="btn btn-ghost delete-all-btn">
+                hepsini sil
+            </button>
+
+        </div>
+
+
+
+        <ul id="tum-gorev" class="liste-gorev">
+
+        </ul>
+
+
+
+        <div class="filtreler">
+
+
+
+            <div class="biten-gorev">
+                <p>Biten: <span id="c-count">0</span></p>
+            </div>
+            <div class="suren-gorev">
+                <p>Hepsi: <span id="r-count">0</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
